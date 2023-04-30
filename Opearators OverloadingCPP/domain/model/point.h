@@ -1,13 +1,13 @@
 #include "../../internal/application.h"
 
-void print(Point p);
+//void print(Point p);
  
 class Point
 {
 private:
 	int x;
 	int y;
-	friend void print(Point p);
+	//friend void print(Point p);
 
 public:
 	Point() = default;
@@ -28,13 +28,24 @@ public:
 	{
 		this->y = y;
 	}
-	////void print()
-	////{
-	////	cout << "[x:" << x << ", y:" << y << "]" << endl;
-	////}
+	void print()
+	{
+	cout << "[x:" << x << ", y:" << y << "]" << endl;
+	}
 	~Point() = default;
 
+
+	friend Point operator+(const Point& point1, const Point& point2);
+	friend Point operator-(const Point& point1, const Point& point2);
+	friend Point operator*(const Point& point1, const Point& point2);
+	friend Point operator/(const Point& point1, const Point& point2);
+	Point& operator++();
+	Point& operator--();
+	const Point operator++(int);
+	const Point operator--(int);
 };
+
+
 
 //void print(Point p)
 //{
