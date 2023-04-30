@@ -1,7 +1,8 @@
-#include "application.h"
+#include "../domain/model/point.h"
 
-int main() {
-
-
+int main() 
+{
+	Point x(1, 2);
+	x.print();
 	return 0;
 }
