@@ -130,6 +130,8 @@
     <ClCompile Include="internal\Applicationcpp.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="domain\model\point.h" />
+    <ClInclude Include="domain\provider\operators_overload.h" />
     <ClInclude Include="internal\application.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

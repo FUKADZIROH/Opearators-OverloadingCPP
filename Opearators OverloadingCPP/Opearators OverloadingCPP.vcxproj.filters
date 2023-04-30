@@ -4,6 +4,15 @@
     <Filter Include="internal">
       <UniqueIdentifier>{3863635b-c3c6-4add-88ec-b9a124648465}</UniqueIdentifier>
     </Filter>
+    <Filter Include="domain">
+      <UniqueIdentifier>{583b1278-f0b2-4141-b5c5-e9aabc9f3f35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="domain\models">
+      <UniqueIdentifier>{cd13c2d3-4a44-42ad-8d58-3c60eccdebfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="domain\provider">
+      <UniqueIdentifier>{a0b2d448-0a44-4627-aa08-d916ca9e33c8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="internal\Applicationcpp.cpp">
@@ -13,6 +22,12 @@
   <ItemGroup>
     <ClInclude Include="internal\application.h">
       <Filter>internal</Filter>
+    </ClInclude>
+    <ClInclude Include="domain\model\point.h">
+      <Filter>domain\models</Filter>
+    </ClInclude>
+    <ClInclude Include="domain\provider\operators_overload.h">
+      <Filter>domain\provider</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
